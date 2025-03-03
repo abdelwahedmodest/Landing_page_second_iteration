@@ -1,0 +1,80 @@
+{
+  "header": {
+    "home": "Home",
+    "features": "Features",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Boost Your Productivity",
+    "subtitle": "The ultimate Pomodoro Timer app to help you focus and achieve more",
+    "downloadButton": "Download Now",
+    "learnMoreButton": "Learn More"
+  },
+  "features": {
+    "title": "Key Features",
+    "feature1": {
+      "title": "Customizable Timers",
+      "description": "Set work and break intervals that suit your workflow"
+    },
+    "feature2": {
+      "title": "Task Management",
+      "description": "Organize your tasks and track your progress"
+    },
+    "feature3": {
+      "title": "Statistics",
+      "description": "View detailed productivity statistics and insights"
+    },
+    "feature4": {
+      "title": "Notifications",
+      "description": "Get notified when it's time to take a break or resume work"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Users Say",
+    "testimonial1": {
+      "text": "This app has completely transformed my work habits. I'm more productive than ever!",
+      "author": "Sarah J."
+    },
+    "testimonial2": {
+      "text": "The best Pomodoro app I've used. Simple, effective, and beautifully designed.",
+      "author": "Michael T."
+    },
+    "testimonial3": {
+      "text": "I love how I can customize the timers to fit my personal workflow.",
+      "author": "Emma R."
+    }
+  },
+  "download": {
+    "title": "Get Started Today",
+    "subtitle": "Download the Pomodoro Timer app and boost your productivity",
+    "formTitle": "Download Form",
+    "nameLabel": "Full Name",
+    "emailLabel": "Email Address",
+    "phoneLabel": "Phone Number (Optional)",
+    "platformLabel": "Platform",
+    "platformOptions": {
+      "ios": "iOS",
+      "android": "Android"
+    },
+    "submitButton": "Download Now",
+    "privacyNotice": "By submitting this form, you agree to our Privacy Policy and Terms of Service."
+  },
+  "about": {
+    "title": "About Pomodoro Timer",
+    "description": "The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. Our app brings this powerful technique to your mobile device, helping you break work into intervals, traditionally 25 minutes in length, separated by short breaks.",
+    "mission": "Our mission is to help people achieve more by working smarter, not harder."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Have questions or feedback? We'd love to hear from you!",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "submitButton": "Send Message"
+  },
+  "footer": {
+    "copyright": "© 2025 Pomodoro Timer. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}

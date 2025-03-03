@@ -1,0 +1,80 @@
+{
+  "header": {
+    "home": "Inicio",
+    "features": "Características",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Aumenta Tu Productividad",
+    "subtitle": "La aplicación definitiva de Pomodoro Timer para ayudarte a concentrarte y lograr más",
+    "downloadButton": "Descargar Ahora",
+    "learnMoreButton": "Saber Más"
+  },
+  "features": {
+    "title": "Características Principales",
+    "feature1": {
+      "title": "Temporizadores Personalizables",
+      "description": "Establece intervalos de trabajo y descanso que se adapten a tu flujo de trabajo"
+    },
+    "feature2": {
+      "title": "Gestión de Tareas",
+      "description": "Organiza tus tareas y realiza un seguimiento de tu progreso"
+    },
+    "feature3": {
+      "title": "Estadísticas",
+      "description": "Visualiza estadísticas detalladas de productividad e información"
+    },
+    "feature4": {
+      "title": "Notificaciones",
+      "description": "Recibe notificaciones cuando sea hora de tomar un descanso o reanudar el trabajo"
+    }
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Nuestros Usuarios",
+    "testimonial1": {
+      "text": "Esta aplicación ha transformado completamente mis hábitos de trabajo. ¡Soy más productivo que nunca!",
+      "author": "Sarah J."
+    },
+    "testimonial2": {
+      "text": "La mejor aplicación de Pomodoro que he usado. Simple, efectiva y con un diseño hermoso.",
+      "author": "Michael T."
+    },
+    "testimonial3": {
+      "text": "Me encanta cómo puedo personalizar los temporizadores para adaptarlos a mi flujo de trabajo personal.",
+      "author": "Emma R."
+    }
+  },
+  "download": {
+    "title": "Comienza Hoy",
+    "subtitle": "Descarga la aplicación Pomodoro Timer y aumenta tu productividad",
+    "formTitle": "Formulario de Descarga",
+    "nameLabel": "Nombre Completo",
+    "emailLabel": "Dirección de Correo Electrónico",
+    "phoneLabel": "Número de Teléfono (Opcional)",
+    "platformLabel": "Plataforma",
+    "platformOptions": {
+      "ios": "iOS",
+      "android": "Android"
+    },
+    "submitButton": "Descargar Ahora",
+    "privacyNotice": "Al enviar este formulario, aceptas nuestra Política de Privacidad y Términos de Servicio."
+  },
+  "about": {
+    "title": "Acerca de Pomodoro Timer",
+    "description": "La Técnica Pomodoro es un método de gestión del tiempo desarrollado por Francesco Cirillo a finales de la década de 1980. Nuestra aplicación lleva esta poderosa técnica a tu dispositivo móvil, ayudándote a dividir el trabajo en intervalos, tradicionalmente de 25 minutos de duración, separados por breves descansos.",
+    "mission": "Nuestra misión es ayudar a las personas a lograr más trabajando de manera más inteligente, no más dura."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "description": "¿Tienes preguntas o comentarios? ¡Nos encantaría saber de ti!",
+    "emailLabel": "Correo Electrónico",
+    "messageLabel": "Mensaje",
+    "submitButton": "Enviar Mensaje"
+  },
+  "footer": {
+    "copyright": "© 2025 Pomodoro Timer. Todos los derechos reservados.",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio"
+  }
+}

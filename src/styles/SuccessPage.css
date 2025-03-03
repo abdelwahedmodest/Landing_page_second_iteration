@@ -1,0 +1,124 @@
+/* SuccessPage specific styles */
+
+.success-page {
+  padding: var(--spacing-xxl) 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.success-container {
+  background-color: var(--white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.success-icon {
+  font-size: 64px;
+  color: var(--accent-color);
+  margin-bottom: var(--spacing-md);
+}
+
+.success-message {
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-xl);
+  color: var(--text-color);
+}
+
+/* Download buttons */
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.download-button.ios {
+  background-color: #000000;
+  color: var(--white);
+}
+
+.download-button.android {
+  background-color: #3ddc84;
+  color: #000000;
+}
+
+.download-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Next steps */
+.next-steps {
+  background-color: var(--gray-light);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-xl);
+  text-align: left;
+}
+
+.next-steps h2 {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-large);
+}
+
+.next-steps ol {
+  padding-left: var(--spacing-xl);
+}
+
+.next-steps li {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Return link */
+.return-link {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.return-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .download-buttons {
+    flex-direction: column;
+  }
+  
+  .success-container {
+    margin: 0 var(--spacing-md);
+  }
+}
