@@ -38,22 +38,22 @@ function DownloadPage() {
     setError('');
     
     try {
-      // In a real application, this would be a call to your backend API
-      // For demonstration, we'll simulate a successful submission
-      console.log('Form data submitted:', data);
-      console.log(data['name'])
-      // Simulate API call delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Redirect to success page
-      navigate('/success');
+      const response = await axios.post('/api', data);
+      console.log('API Response:', response.data); // Vérification
+    
+      if (response.data.status === 'success') {
+        console.log('Navigating to /success');
+        navigate('/success');
+      } else {
+        setError('There was an error saving your information.');
+      }
     } catch (err) {
       console.error('Error submitting form:', err);
       setError('There was an error submitting your information. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
-  };
+  };    
 
   return (
     <div className="download-page">
