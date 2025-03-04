@@ -41,7 +41,7 @@ function DownloadPage() {
       // In a real application, this would be a call to your backend API
       // For demonstration, we'll simulate a successful submission
       console.log('Form data submitted:', data);
-      
+      console.log(data['name'])
       // Simulate API call delay
       await new Promise(resolve => setTimeout(resolve, 1500));
       

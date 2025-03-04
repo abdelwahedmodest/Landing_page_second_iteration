@@ -35,7 +35,7 @@ function HomePage() {
             </div>
           </div>
           <img 
-            src="https://images.unsplash.com/photo-1611224885990-ab7363d7f2a9?auto=format&fit=crop&w=1000&q=80" 
+            src="/mobile_app.jpg" 
             alt="Pomodoro Timer App" 
             className="hero-image" 
           />
@@ -48,7 +48,7 @@ function HomePage() {
           <h2 className="text-center mb-4">See Pomodoro Timer in Action</h2>
           <div className="video-container">
             <iframe 
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              src="/POMODORTO3.mp4" 
               title="Pomodoro Timer Demo" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
