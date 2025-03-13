@@ -13,7 +13,13 @@ import '../styles/DownloadPage.css';
 
 /**
  * DownloadPage component with a form to collect user information
- * Form data is submitted to a Google Sheet via a serverless function
+ * Form data is submitted to a Google Sheet via a Google Form submission
+ * 
+ * To set up:
+ * 1. Create a Google Form with fields matching your form (name, email, phone, platform)
+ * 2. Get the form submission URL and field entry IDs
+ * 3. Update the googleFormUrl and entry IDs in the onSubmit function
+ * 4. For production, replace the CORS proxy with a serverless function
  */
 function DownloadPage() {
   // Get translation function
@@ -38,18 +44,51 @@ function DownloadPage() {
     setError('');
     
     try {
-      // In a real application, this would be a call to your backend API
-      // For demonstration, we'll simulate a successful submission
       console.log('Form data submitted:', data);
-      console.log(data['name'])
-      // Simulate API call delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      
+      // Google Form submission URL - this should be replaced with your actual Google Form URL
+      // The URL format is typically like: https://docs.google.com/forms/d/e/{form-id}/formResponse
+      const googleFormUrl = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse';
+      
+      // Map form field names to Google Form entry IDs
+      // These entry IDs need to be replaced with your actual Google Form field IDs
+      const formData = new FormData();
+      formData.append('entry.123456789', data.name); // Replace 123456789 with your actual entry ID for name
+      formData.append('entry.234567890', data.email); // Replace 234567890 with your actual entry ID for email
+      if (data.phone) {
+        formData.append('entry.345678901', data.phone); // Replace 345678901 with your actual entry ID for phone
+      }
+      formData.append('entry.456789012', data.platform); // Replace 456789012 with your actual entry ID for platform
+      
+      // Send data to Google Form
+      // Using a proxy or CORS-anywhere service might be necessary due to CORS restrictions
+      // For production, consider using a serverless function as a proxy
+      const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+      
+      await axios({
+        method: 'post',
+        url: proxyUrl + googleFormUrl,
+        data: formData,
+        headers: { 'Content-Type': 'multipart/form-data' }
+      });
       
       // Redirect to success page
       navigate('/success');
     } catch (err) {
       console.error('Error submitting form:', err);
-      setError('There was an error submitting your information. Please try again.');
+      
+      // Provide more specific error messages based on the error type
+      if (err.response) {
+        // The request was made and the server responded with a status code
+        // that falls out of the range of 2xx
+        setError(`Server error: ${err.response.status}. Please try again later.`);
+      } else if (err.request) {
+        // The request was made but no response was received
+        setError('No response from server. Please check your internet connection and try again.');
+      } else {
+        // Something happened in setting up the request that triggered an Error
+        setError('There was an error submitting your information. Please try again.');
+      }
     } finally {
       setIsSubmitting(false);
     }
